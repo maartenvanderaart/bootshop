@@ -1,2 +1,2 @@
 def hello(event, context):
-    return { "message": "Getting somewhere... Someday...", "event": event }
+    return { "message": "Math is hard, let's go shopping!", "event": event }

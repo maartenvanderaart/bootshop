@@ -52,6 +52,40 @@ functions:
           path: product/add
           method: put
 
+  listCart:
+    handler: cart.list
+    events:
+      - http:
+          path: cart/list
+          method: get
+
+  addToCart:
+    handler: cart.add
+    events:
+      - http:
+          path: cart/add
+          method: put
+
+  clearCart:
+    handler: cart.clear
+    events:
+      - http:
+          path: cart/clear
+          method: get
+
+  listOrders:
+    handler: order.list
+    events:
+      - http:
+          path: order/list
+          method: get
+
+  addOrder:
+    handler: order.add
+    events:
+      - http:
+          path: order/add
+          method: put
 #   you can add any of the following events
 #   events:
 #     - http:
