@@ -21,3 +21,11 @@ var Bootshop = {
 	}
 
 }
+
+$( document ).ready(function() {
+    $.ajax({
+        url: 'js/views/header.html'
+    }).then(function(data) {
+       $('#header').append(data);
+    });
+});
