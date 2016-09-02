@@ -1,0 +1,5 @@
+deploy:
+  image: node:latest
+  script:
+  - npm i -g serverless@1.0.0-beta.2
+  - sls deploy --region=eu-west-1
